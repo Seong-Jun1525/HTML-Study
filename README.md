@@ -57,7 +57,7 @@
 
 ## 웹 브라우저에 문서내용 출력하기
 ---
-![e-ex1](./1/img/ex1.png)
+![ex1](https://user-images.githubusercontent.com/77059720/136536674-6a3aa0fd-7ef5-473b-86f5-1d5a064ef53f.PNG)
 <br />
 ```html
 <h1>h1 요소를 사용</h1>
@@ -93,7 +93,7 @@ ol | **순서 표시 리스트** | type="1 or A or a or I" start="시작번호"
 li | 항목 | value="표시번호"
 
 ### **ex1**
-![e-ex1](./2/img/ex1.png)
+![ex1](https://user-images.githubusercontent.com/77059720/136536778-42ffead5-754e-4d28-b035-2985207468b1.PNG)
 
 ---
 ### code
@@ -138,7 +138,7 @@ th | 제목 셀 표시
 td | 내용 셀 표시
 
 ### **ex2**  
-![e-ex2](./2/img/ex2.png)
+![ex2](https://user-images.githubusercontent.com/77059720/136536781-5a7eff33-7027-492c-abc0-c3758a133cae.PNG)
 
 ---
 ### code
@@ -196,7 +196,7 @@ tbody | 내용 셀 부분
 tfoot | 표의 마지막 부분(요약 셀들)
 
 ### **ex3**  
-![e-ex3](./2/img/ex3.png)
+![ex3](https://user-images.githubusercontent.com/77059720/136536783-cc115923-5c90-434f-b524-20866a922ad2.PNG)
 
 ---
 ### code
@@ -255,7 +255,8 @@ tfoot | 표의 마지막 부분(요약 셀들)
 ```
 
 ### 행, 열 셀 합치기
-![e-ex4](./2/img/ex4.png)
+![ex4](https://user-images.githubusercontent.com/77059720/136536785-08ef6cf5-d3b4-4347-bde7-553f2793d12b.PNG)
+
 
 ---
 ### code
@@ -325,7 +326,7 @@ tfoot | 표의 마지막 부분(요약 셀들)
 
 ---
 ### **ex1**
-![e-ex1](./3/img/ex1.png)
+![ex1](https://user-images.githubusercontent.com/77059720/136536927-62f9f1f0-4183-44fe-9ff1-3b46d4186407.PNG)
 
 ---
 ### **HTML**
@@ -461,7 +462,7 @@ nav{
     submit | 데이터 전송 버튼, 입력된 데이터를 웹 서버로 전송
 
 ### **ex1**
-![e-ex1](./4/img/1.png)
+![1](https://user-images.githubusercontent.com/77059720/136536991-a3b5de98-1831-453b-bfab-eb1c0ace77c0.PNG)
 
 ### **code**
 
@@ -480,7 +481,7 @@ nav{
 ```
 
 ### **ex2**
-![e-ex2](./4/img/2.png)
+![2](https://user-images.githubusercontent.com/77059720/136536995-98090b93-5d4a-4462-bc9c-922944d013a6.PNG)
 
 ### **code**
 
@@ -503,7 +504,7 @@ nav{
 ```
 
 ### **ex3**
-![e-ex3](./4/img/3.png)
+![3](https://user-images.githubusercontent.com/77059720/136536996-0e201d31-4589-4096-b170-bfefc99f9424.PNG)
 
 ### **code**
 
@@ -518,7 +519,7 @@ nav{
 ```
 
 ### **ex4**
-![e-ex4](./4/img/4.png)
+![4](https://user-images.githubusercontent.com/77059720/136536998-a4217c4c-699e-45f9-90d2-90c5f4fcf203.PNG)
 
 ### **code**
 
@@ -544,7 +545,7 @@ button<br><br>
 ```
 
 ### **ex5**
-![e-ex5](./4/img/5.png)
+![5](https://user-images.githubusercontent.com/77059720/136537001-fef59e7b-96af-441f-8096-a8ffd9c817ae.PNG)
 
 ### **code**
 
@@ -570,7 +571,7 @@ button<br><br>
 ```
 
 ### **ex6**
-![e-ex6](./4/img/6.png)
+![6](https://user-images.githubusercontent.com/77059720/136537005-cc7e518f-ca12-4728-b504-8211f373c2c1.PNG)
 
 ### **code**
 
@@ -624,7 +625,7 @@ button<br><br>
 ```
 
 ### **ex7**
-![e-ex7](./4/img/7.png)
+![7](https://user-images.githubusercontent.com/77059720/136537008-6ea072d0-7365-40c1-a5d7-e08db8f3e520.PNG)
 
 ### **code**
 
@@ -639,7 +640,7 @@ button<br><br>
 ```
 
 ### **ex8**
-![e-ex8](./4/img/8.png)
+![8](https://user-images.githubusercontent.com/77059720/136537011-b60ee7b2-0307-4b53-bced-5d03ca753160.PNG)
 
 ### **code**
 
@@ -675,7 +676,7 @@ button<br><br>
 ```
 
 ### **ex9**
-![e-ex9](./4/img/9.png)
+![9](https://user-images.githubusercontent.com/77059720/136537012-6151b052-1dc8-4d8e-953a-44c89f6a1261.PNG)
 
 ### **code**
 
