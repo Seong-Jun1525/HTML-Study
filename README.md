@@ -57,7 +57,7 @@
 
 ## 웹 브라우저에 문서내용 출력하기
 ---
-<img src="./1/img/ex1.png" alt="ex1" />
+![e-ex1](./1/img/ex1.png)
 <br />
 ```html
 <h1>h1 요소를 사용</h1>
@@ -93,7 +93,7 @@ ol | **순서 표시 리스트** | type="1 or A or a or I" start="시작번호"
 li | 항목 | value="표시번호"
 
 ### **ex1**
-<img src="./2/img/ex1.png" height=450>
+![e-ex1](./2/img/ex1.png)
 
 ---
 ### code
@@ -138,7 +138,7 @@ th | 제목 셀 표시
 td | 내용 셀 표시
 
 ### **ex2**  
-<img src="./2/img/ex2.png" height=250>
+![e-ex2](./2/img/ex2.png)
 
 ---
 ### code
@@ -196,7 +196,7 @@ tbody | 내용 셀 부분
 tfoot | 표의 마지막 부분(요약 셀들)
 
 ### **ex3**  
-<img src="./2/img/ex3.png" height=250>
+![e-ex3](./2/img/ex3.png)
 
 ---
 ### code
@@ -255,7 +255,7 @@ tfoot | 표의 마지막 부분(요약 셀들)
 ```
 
 ### 행, 열 셀 합치기
-<img src="./2/img/ex4.png" height=250>
+![e-ex4](./2/img/ex4.png)
 
 ---
 ### code
@@ -325,7 +325,7 @@ tfoot | 표의 마지막 부분(요약 셀들)
 
 ---
 ### **ex1**
-<img src="./3/img/ex1.png" height="500">
+![e-ex1](./3/img/ex1.png)
 
 ---
 ### **HTML**
@@ -461,7 +461,7 @@ nav{
     submit | 데이터 전송 버튼, 입력된 데이터를 웹 서버로 전송
 
 ### **ex1**
-<img src="./4/img/1.png">
+![e-ex1](./4/img/1.png)
 
 ### **code**
 
@@ -480,7 +480,7 @@ nav{
 ```
 
 ### **ex2**
-<img src="./4/img/2.png">
+![e-ex2](./4/img/2.png)
 
 ### **code**
 
@@ -503,7 +503,7 @@ nav{
 ```
 
 ### **ex3**
-<img src="./4/img/3.png">
+![e-ex3](./4/img/3.png)
 
 ### **code**
 
@@ -518,7 +518,7 @@ nav{
 ```
 
 ### **ex4**
-<img src="./4/img/4.png">
+![e-ex4](./4/img/4.png)
 
 ### **code**
 
@@ -544,7 +544,7 @@ button<br><br>
 ```
 
 ### **ex5**
-<img src="./4/img/5.png">
+![e-ex5](./4/img/5.png)
 
 ### **code**
 
@@ -570,7 +570,7 @@ button<br><br>
 ```
 
 ### **ex6**
-<img src="./4/img/6.png" style="width: 600px">
+![e-ex6](./4/img/6.png)
 
 ### **code**
 
@@ -624,7 +624,7 @@ button<br><br>
 ```
 
 ### **ex7**
-<img src="./4/img/7.png">
+![e-ex7](./4/img/7.png)
 
 ### **code**
 
@@ -639,7 +639,7 @@ button<br><br>
 ```
 
 ### **ex8**
-<img src="./4/img/8.png">
+![e-ex8](./4/img/8.png)
 
 ### **code**
 
@@ -675,7 +675,7 @@ button<br><br>
 ```
 
 ### **ex9**
-<img src="./4/img/9.png">
+![e-ex9](./4/img/9.png)
 
 ### **code**
 
