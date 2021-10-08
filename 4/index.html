@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    <h2>성적 입력 & 조회</h2>
+    <pre>
+        <form>
+            학      과 : <input type="text" name="major" value="학과명">
+            이      름 : <input type="text" name="name" value="">
+            중간  성적 : <input type="text" name="middle">
+            기말  성적 " <input type="text" name="last">
+            <input type="submit" value="처리결과 조회"><input type="reset" value="입력취소">
+        </form>
+    </pre>
+
+    <hr><hr>
+
+    <form>
+	  아 이 &nbsp;디 : <input type="text" name="id" size="15" value="ID입력하세요"><br>
+	  패스워드 : <input type="password" name="passwd" id="p" size="15"><br>
+	  성    별 : <input type="radio" name="gender">남성
+				 <input type="radio" name="gender">여성<br>
+	  학    년 : <input type="radio" name="grade">1학년
+				 <input type="radio" name="grade">2학년<br>
+	  취    미
+	  <input type="checkbox" name="sport1">야구
+	  <input type="checkbox" name="sport2">축구
+	  <input type="checkbox" name="sport3">농구
+	  <input type="checkbox" name="sport4">테니스<br>
+
+	  <input type="submit" value="로그인" /><input type="reset" value="입력취소" />
+	</form>
+
+    <hr><hr>
+    과제제출 <br><br>
+    <form>
+	  제출자 : <input type="text" name="id">&nbsp;&nbsp;
+      [첨부파일]<input type="file" name="filename">
+
+	  <input type="submit" value="과제제출"><input type="reset" value="입력취소">
+	</form>
+
+    <hr><hr>
+     button<br><br>
+    <form>
+	  <a href="https://www.w3schools.com/html/" target="_blank">
+	     <button type="button">Lean HTML</button>
+	  </a>
+	  <a href="https://www.w3schools.com/css/" target="_blank">
+	     <button type="button">Lean CSS3</button>
+	  </a>
+	  <a href="https://www.w3schools.com/js/" target="_blank">
+	     <button type="button">Lean Javascript</button>
+	  </a>
+
+	  <button type="button" onclick="alert('버튼을 클릭했습니다');">click me
+	  </button><br><br>
+	  글남기기 : <input type="text" name="user" size="35">
+	  <button type="submit">저장</button>
+	  <button type="reset">지우기</button>
+	</form>
+
+    <hr><hr>
+
+    여행 선택<br><br>
+    <form>
+      국가<select name="country" multiple>
+	        <option value="a1">프랑스</option>
+	        <option value="a2">한국</option>
+	        <option value="a3">미국</option>
+			<option value="a4">호주</option>
+	      </select><br><br>
+	  도시<select name="city" size="3" multiple>
+			<option value="a">서울</option>
+			<option value="부산">부산</option>
+			<option value="광주">광주</option>
+			<option value="인천">인천</option>
+			<option value="수원">수원</option>
+			<option value="안양">안양</option>
+	      </select><br>
+	  <button type="submit">데이터전송</button>
+	</form>
+
+    <hr><hr>
+
+     회원정보<br><br>
+    <form style="width: 700px;">
+	  <fieldset>
+	    <legend>인적사항</legend>
+	       이름 : <input type="text" name="name" size="10" value=""><br>
+		   주민번호: <input type="text" name="jumin-1" size="6" value="">-
+					 <input type="text" name="jumin-2" size="7" value=""><br>
+		   국적 : <select>
+					<option>한국</option>
+					<option>중국</option>
+				    <option>일국</option>
+					<option>미국</option>
+					<option>영국</option>
+				  </select>
+		</fieldset>
+		<fieldset>
+			<legend>성별</legend>
+				  성    별 : <input type="radio" name="gender">남성
+							 <input type="radio" name="gender">여성<br>
+		</fieldset>
+		<fieldset>
+			<legend>학년</legend>
+				 학    년 : <input type="radio" name="grade">1학년
+							<input type="radio" name="grade">2학년
+							<input type="radio" name="grade">3학년
+		</fieldset>
+        <fieldset>
+			<legend>이메일 입력</legend>
+			  이메일 : <input type="email" placeholder="mygod@hytu.ac.kr" name="mail">
+			  웹주소 : <input type="url" placeholder="http://www.yuhan.ac.kr" name="address">
+		</fieldset>
+		<fieldset>
+			<legend>취미</legend>
+				<input type="checkbox" name="sport">야구
+				<input type="checkbox" name="sport">축구
+				<input type="checkbox" name="sport">농구
+				<input type="checkbox" name="sport">테니스
+		</fieldset>
+		<fieldset>
+			<legend>메모를 남기세요</legend>
+			  <textarea rows="5" cols="50" name="memo">
+				
+			  </textarea><hr>
+		</fieldset><br>
+	  <input type="submit" value="저장"><input type="reset" value="입력취소">
+	</form>
+
+
+    <hr><hr>
+
+    <form style="width: 300px;">
+		<fieldset>
+			<legend>검색어</legend>
+			검색어 : <input type="search" name="keyword">
+		</fieldset>
+	  <input type="submit" value="저장"><input type="reset" value="입력취소">
+	</form>
+
+    <hr><hr>
+
+    <form style="width: 300px;">
+		<fieldset>
+			<legend>DATE</legend>
+			  회의일자 : <input type="date" name="mday">
+		</fieldset>
+		<fieldset>
+			<legend>WEEK</legend>
+			  회의일자 : <input type="week" name="mday">
+		</fieldset>
+		<fieldset>
+			<legend>MONTH</legend>
+			  회의일자 : <input type="month" name="mday">
+		</fieldset>
+        <fieldset>
+			<legend>Time</legend>
+			  회의 시간 : <input type="time" name="mtime">
+		</fieldset>
+        <fieldset>
+			<legend>DateTime</legend>
+			  회의 시간 : <input type="datetime" name="mtime">
+		</fieldset>
+        <fieldset>
+			<legend>DateTime-local</legend>
+			  회의 시간 : <input type="datetime-local" name="mtime">
+		</fieldset>
+
+	  <input type="submit" value="저장"><input type="reset" value="입력취소">
+	</form>
+
+    <hr><hr>
+
+    <form style="width: 300px;">
+		<fieldset>
+			<legend>숫자</legend>
+			  나이는 : <input type="number" min="0" max="100" step="1" value="20">
+		</fieldset>
+        <fieldset>
+			<legend>범위 값</legend>
+			  성적 : <input type="range" min="0" max="100" step="5" value="50">
+		</fieldset>
+        <fieldset>
+			<legend>색상 선택</legend>
+			  색상 : <input type="color" value="#ff0000">
+		</fieldset>
+	  <input type="submit" value="저장"><input type="reset" value="입력취소">
+	</form>
+</body>
+</html>
