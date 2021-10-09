@@ -624,6 +624,26 @@ button<br><br>
 </form>
 ```
 
+## input 요소의 고급 type 속성값
+type 속성값 | 설명
+-- | --
+email | 'xxx@xxx.xxx' 형식입력
+URL | '프로토콜://IP_주소/경로명/파일명' 형식 입력
+tel | pattern 속성으로 지정한 전화번호 형식 입력
+search | 검색어 입력필드
+date | 년-월-일 형태의 달력 입력
+month | 년-월 형태의 달력 입력
+week | 년-주 형태의 달력 입력
+time | 시간 입력 필드
+datetime | 국제표준 시간대의 날짜 및 시간 입력 필드
+datetime-local | 지역 표준시간대의 날짜와 시간 입력 필드
+number | 수치입력 필드
+range | 스크롤 바 형태의 수치범위 입력필드
+color | 색상 선택 대화상자 입력
+button | 버튼 입력, `<a>` 태그와 함께 사용함
+image | 이미지 버튼입력, `<a>` 태그와 함께 사용함
+hidden | 사용자에게 숨기고 웹 서버에게 전달할 데이터를 나타냄
+
 ### **ex7**
 ![7](https://user-images.githubusercontent.com/77059720/136537008-6ea072d0-7365-40c1-a5d7-e08db8f3e520.PNG)
 
@@ -697,3 +717,13 @@ button<br><br>
     <input type="submit" value="저장"><input type="reset" value="입력취소">
 </form>
 ```
+
+## html5에 추가된 input 속성
+속성 | 설명
+-- | --
+list | 입력 가능한 값들을 목록 형식으로 제공함
+required | 필수 입력 필드로 지정함
+autofocus | 입력 필드를 입력가능 상태로 지정함
+placeholder | 입력 예시를 나타냄
+disabled | 입력 불가능 상태로 지정함
+autocomplete | 이전의 유사한 입력내용을 제공함
