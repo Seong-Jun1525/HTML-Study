@@ -22,6 +22,7 @@
 ```
 - `<!DOCTYPE html>`
     - HTML5라는 의미입니다. DOCTYPE 선언은 HTML 문서에서 `<html>` 태그를 정의하기 전에 가장 먼저 선언되어야만 합니다.
+    - html5는 스마트폰 때문에 생겼습니다.
 - `<html></html>`
     - html파일의 시작과 끝을 의미합니다.
 - `<head></head>`
@@ -38,6 +39,8 @@
 - html의 요소들은 '<'와 '>'로 둘러싼 태그표현을 이용해서 시작을 나타내고 '<'와 '/>'로 둘러싼 태그표현을 이용해서 끝을 나타냅니다.
 - `<h1 id="title">HTML</h1>` : <시작태그 속성명="속성 값">요소내용</종료태그>
 - 속성값은 여러개일 수 있고 시작태그와 종료태그를 작성하는것이 아니고 <태그명 /> 혹은 <태그명>으로 작성하는 경우도 있습니다. (요소의 내용이 없는 경우)
+- 태그를 나타낼 때는 영문 대/소문자를 구분하지 않습니다.
+- 하나 이상의 연속된 공백문자들과 엔터키 입력들은 웹브라우저로 출력될 때 하나의 공백문자만 인식해서 출력합니다.
 - ex)
 ```html
 <img src="./로고.jpg" alt="로고"/>, <hr>
@@ -47,13 +50,28 @@
 <h1><a href="#">로고</a></h1>
 ```
 
-* 태그
-- `<h1>` ~ `<h6>`
-- `<hr>`, `<br>`
-- `<p>`
-- `<strong>`, `<b></b>`, `<em></em>`
-- `&lt;`, `&gt;`
-- `&nbsp;`
+## 태그
+### html5 요소
+요소 | 예
+-- | --
+글자 | \<strong>, \<b>, \<i>, \<underline>, \<sub>, \<super>
+문단 | \<h1>~\<h6>, \<pre>, \<p>, \<br>, \<hr>, \<ol>, \<ul>, \<li>, \<table>
+멀티미디어 | \<img>, \<audio>, \<video>
+하이퍼링크 | \<a>
+외부파일 | \<iframe>, \<object>, \<embed>
+문서 레이아웃 설계 | \<div>, \<span>
+입력 | \<form>, \<input>, \<select>, \<textarea>, \<label>, \<button> 등
+시맨틱문서 | \<header>, \<nav>, \<section>, \<article>, \<aside>, \<footer> 등
+
+### text와 문단 표시
+구분 | 태그
+-- | --
+`제목` | h1 ~ h6
+`단락` | p
+입력형태 그대로 | pre
+수평선 | hr
+`줄 바꿈` | br
+텍스트 형태 | b, i, strong, sub, sup
 
 ## 웹 브라우저에 문서내용 출력하기
 ---
@@ -84,6 +102,23 @@
 <em>&lt;em&gt;요소는 구어체 강조와 같이 문장의 의미를 변경하는데 사용&lt;/em&gt;</em>
 ```
 
+### \<pre>
+```
+메모장과 같은 텍스트 편집기에서 입력했을 때와 같이 그대로 나타냅니다.
+```
+```html
+    <pre>
+        HTML 웹 문서를
+작성하는 표준 언어입니다.
+            태그를 사용했습니다.
+
+            
+        &lt;p&gt;이 태그는 그대로 출력됩니다.&lt;/p&gt;
+        &lt;div&gt;이 태그도 그대로 출력됩니다.&lt;/div&gt;
+  &lt;span style="color: red;"&gt;이 스타일도 그대로 출력됩니다.&lt;/span&gt;
+    </pre>
+```
+![ex2](./1/img/ex2.png)
 ## 리스트
 
 tag | 설명 | 속성
@@ -297,7 +332,7 @@ tfoot | 표의 마지막 부분(요약 셀들)
 </table>
 ```
 
-## HTML 요소의 표시 공간
+# HTML 요소의 표시 공간
 - 라인 블록 요소 : `<div>`, `<hn>`, `<p>`, `<pre>`, `<ul>`, `<ol>`, `<table>`, `<form>`, ...
     - 블록(block)인 요소는 언제나 새로운 라인(line)에서 시작하며, 해당 라인의 모든 너비를 차지
     - `<div>`요소는 다른 HTML 요소들을 하나로 묶는 데 자주 사용되는 대표적인 블록(block) 요소입니다.
@@ -310,9 +345,7 @@ tfoot | 표의 마지막 부분(요약 셀들)
     - `<span>`요소는 주로 텍스트의 특정 부분에 따로 스타일을 적용하기 위해 사용됩니다.
 
 - **`<div>`와 `<span>` 테그의 같은 점은 범위를 지정한다는 것이 같고 `<div>`태그는 표시 공간을 라인블럭으로 지정하고, `<span>`태그는 표시 공간을 인라인 블럭으로 지정한다.**
-
-## 레이아웃
-
+## html page
 - 시맨틱 태그들
 
     요소 | 의미
@@ -323,6 +356,121 @@ tfoot | 표의 마지막 부분(요약 셀들)
     `<article>` | 문서 내용 부분(대분류)
     `<section>` | 문서 내용 부분(소분류)
     `<footer>` | 문서 마지막 부분
+```html
+<header>
+    <h1>header</h1>
+    <nav>
+        <ul>
+            <li><a href="/">메뉴1</a></li>
+            <li><a href="/">메뉴2</a></li>
+            <li><a href="/">메뉴3</a></li>
+            <li><a href="/">메뉴4</a></li>
+            <li><a href="/">메뉴5</a></li>
+        </ul>
+    </nav>
+</header>
+<aside>
+    <h3>참고내용</h3>
+    <ul>
+        <li><a href="/">링크1</a></li>
+        <li><a href="/">링크2</a></li>
+        <li><a href="/">링크3</a></li>
+        <li><a href="/">링크4</a></li>
+    </ul>
+</aside>
+<section>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</section>
+<footer>
+    <h4>연락처: 010-1234-1234</h4> <span>&copy; 웹개발자</span>
+</footer>
+```
+![ex3](./3/img/ex3.png)
+### css 입히기
+```css
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color:#000;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background: #464242;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+}
+.link {
+    color: #fff
+}
+
+#wrap {
+    width: 100%;
+    display: flex;
+    height: 67.1vh;
+}
+
+#subMenu {
+    width: 10%;
+    text-align: center;
+    background: #928b8b;
+}
+
+#subMenuList {
+    font-size: 20px;
+}
+
+#subMenuList > li {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#content {
+    width: 90%;
+}
+
+footer {
+    background: #3b3b3b;
+    color: #fff;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+```
+
+![ex2](./3/img/ex2.png)
+
+## 레이아웃
 
 ---
 ### **ex1**
