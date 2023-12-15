@@ -333,7 +333,7 @@ tfoot | 표의 마지막 부분(요약 셀들)
 ```
 
 # HTML 요소의 표시 공간
-- 라인 블록 요소 : `<div>`, `<hn>`, `<p>`, `<pre>`, `<ul>`, `<ol>`, `<table>`, `<form>`, ...
+- 라인 블록 요소 : `<div>`, `<h1>~<h6>`, `<p>`, `<pre>`, `<ul>`, `<ol>`, `<table>`, `<form>`, ...
     - 블록(block)인 요소는 언제나 새로운 라인(line)에서 시작하며, 해당 라인의 모든 너비를 차지
     - `<div>`요소는 다른 HTML 요소들을 하나로 묶는 데 자주 사용되는 대표적인 블록(block) 요소입니다.
     - `<div>`요소는 주로 여러 요소들의 스타일을 한 번에 적용하기 위해 사용됩니다.
@@ -470,13 +470,14 @@ footer {
 
 ![ex2](./3/img/ex2.png)
 
+## 시맨틱 태그 사용
+
+
 ## 레이아웃
 
----
 ### **ex1**
 ![ex1](https://user-images.githubusercontent.com/77059720/136536927-62f9f1f0-4183-44fe-9ff1-3b46d4186407.PNG)
 
----
 ### **HTML**
 ```html
 <div id="wrap">
@@ -585,6 +586,15 @@ nav{
 ```
 
 ## 폼
+```
+form태그는 여러 입력 항목들을 그룹핑하여 한 입력 양식을 정의하고, 입력된 데이터들을 웹서버로 전달할 때 필요한 정보(전달방식, 전달 대상 등)를 속성으로 지정합니다.
+```
+- form 태그의 속성
+
+    속성명 | 설명
+    -- | --
+    `action` | 사용자가 입력한 데이터들을 전달받는 웹 서버의 처리 프로그램을 지정하는 것<br />(일반적으로 C 등으로 작성된 CGI프로그램 실행 파일이나 PHP, JSP, ASP 등으로 작성된 스크립트 파일)
+    `method` | 입력된 데이터들을 웹 서버로 전달하는 방식을 지정하는 것<br/>- `post방식`: 데이터를 HTTP Request 전송 객체를 통해 전달하여 get방식과는 달리 전달되는 데이터들이 노출되지 않습니다.<br/>- `get방식`: 데이터를 URL 뒤에 "변수명=데이터" 형식으로 붙여 웹서버에게 전달합니다.<br />`default값 : post방식`
 - 입력양식 tag
 
     입력태그 | 설명
@@ -874,4 +884,23 @@ required | 필수 입력 필드로 지정함
 autofocus | 입력 필드를 입력가능 상태로 지정함
 placeholder | 입력 예시를 나타냄
 disabled | 입력 불가능 상태로 지정함
-autocomplete | 이전의 유사한 입력내용을 제공함
+autocomplete | 이전의 입력내용을 제공함
+
+### list 사용
+![ex10](./4/img/img10.PNG)
+### code
+```html
+<form style="width: 500px">
+    <fieldset>
+        <legend>데이터리스트 속성</legend>
+        전공 : <input type="text" list="major">
+        <datalist id="major">
+            <option value="컴퓨터공학과"/>
+            <option value="기계공학과"/>
+            <option value="정보통신학과"/>
+            <option value="전기공학과"/>
+            <option value="건축공학과"/>
+        </datalist>
+    </fieldset>
+</form>
+```
